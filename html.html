@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML</title>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="main.html"><img src="image/logo.png" alt="Logo"></a>
+        </div>
+        <div class="title">HTML Coverage</div>
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="html.html" id="active">HTML</a>
+            <a href="css.html">CSS</a>
+        </div>
+        <div class="search">
+            <input list="dlist" placeholder="Search HTML lectures...">
+            <datalist id="dlist">
+                <option value="Lecture 1: Introduction to Web Technologies"></option>
+                <option value="Lecture 2: HTML Basics"></option>
+                <option value="Lecture 3: HTML Forms and Media"></option>
+            </datalist>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Lecture 1 -->
+        <div class="card" id="lecture1">
+            <div class="card-top">
+                <span class="badge">Lecture 1</span>
+            </div>
+            <h3>Lecture 1: Introduction to Web Technologies</h3>
+            <p class="subtitle">Overview of web technologies and core concepts</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">This lecture covers the basics of the Internet, web browsers, web servers, and core technologies like HTML, CSS, and JavaScript.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>Introduction to Web Technologies</strong>
+                    <ul>
+                        <li>Internet Basics
+                            <ul>
+                                <li>What is The Internet</li>
+                                <li>World Wide Web</li>
+                            </ul>
+                        </li>
+                        <li>Web Components
+                            <ul>
+                                <li>Web Browser</li>
+                                <li>Web Server</li>
+                                <li>Client-Server Model</li>
+                            </ul>
+                        </li>
+                        <li>Core Technologies
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;h1&gt;Welcome to Web Technologies&lt;/h1&gt;
+&lt;p&gt;This is a simple HTML example.&lt;/p&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <h4 style="font-size: 16px; margin: 0 0 4px 0; color: #000;">Welcome to Web Technologies</h4>
+                <p style="margin: 0; font-size: 13.5px; color: #333;">This is a simple HTML example.</p>
+            </div>
+        </div>
+
+        <!-- Lecture 2 -->
+        <div class="card" id="lecture2">
+            <div class="card-top">
+                <span class="badge">Lecture 2</span>
+            </div>
+            <h3>Lecture 2: HTML Basics</h3>
+            <p class="subtitle">Core elements, syntax, text formatting, and lists</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Covers standard HTML document structure, essential content tags, headings, formatting tags, and ordered/unordered lists.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>HTML Document Skeleton</strong>
+                    <ul>
+                        <li>Document Setup
+                            <ul>
+                                <li>&lt;!DOCTYPE html&gt; declaration</li>
+                                <li>&lt;html&gt;, &lt;head&gt;, &lt;body&gt; tags</li>
+                            </ul>
+                        </li>
+                        <li>Text Elements
+                            <ul>
+                                <li>Headings (&lt;h1&gt; to &lt;h6&gt;)</li>
+                                <li>Paragraphs &amp; breaks (&lt;p&gt;, &lt;br&gt;)</li>
+                                <li>Formatting (&lt;strong&gt;, &lt;em&gt;)</li>
+                            </ul>
+                        </li>
+                        <li>List Structures
+                            <ul>
+                                <li>Unordered lists (&lt;ul&gt;)</li>
+                                <li>Ordered lists (&lt;ol&gt;)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;h2&gt;HTML Basics&lt;/h2&gt;
+&lt;p&gt;Learning &lt;strong&gt;HTML&lt;/strong&gt; is easy.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Headings &amp;amp; Paragraphs&lt;/li&gt;
+  &lt;li&gt;Lists &amp;amp; Formatting&lt;/li&gt;
+&lt;/ul&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <h4 style="font-size: 15px; margin: 0 0 4px 0; color: #000;">HTML Basics</h4>
+                <p style="margin: 0 0 4px 0; font-size: 13px; color: #333;">Learning <strong>HTML</strong> is easy.</p>
+                <ul style="margin: 0; padding-left: 18px; font-size: 13px;">
+                    <li>Headings &amp; Paragraphs</li>
+                    <li>Lists &amp; Formatting</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lecture 3 -->
+        <div class="card" id="lecture3">
+            <div class="card-top">
+                <span class="badge">Lecture 3</span>
+            </div>
+            <h3>Lecture 3: HTML Forms and Media</h3>
+            <p class="subtitle">Capturing user input, controls, and multimedia embedding</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Explores interactive forms, input types, form submission mechanisms, validation attributes, and embedding images and multimedia.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>HTML Forms & Inputs</strong>
+                    <ul>
+                        <li>Form Architecture
+                            <ul>
+                                <li>&lt;form&gt;, action, and method</li>
+                                <li>Get vs Post methods</li>
+                            </ul>
+                        </li>
+                        <li>Input Controls
+                            <ul>
+                                <li>Text, password, email inputs</li>
+                                <li>Radios, checkboxes, buttons</li>
+                            </ul>
+                        </li>
+                        <li>Media Elements
+                            <ul>
+                                <li>Images (&lt;img src="" alt=""&gt;)</li>
+                                <li>Audio &amp; Video tags</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;form&gt;
+  &lt;label&gt;Name: &lt;/label&gt;
+  &lt;input type="text" placeholder="Enter name"&gt;
+  &lt;button type="button"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <form style="display: flex; gap: 6px; align-items: center; flex-wrap: wrap;">
+                    <label style="font-size: 13px; font-weight: bold;">Name:</label>
+                    <input type="text" placeholder="Enter name" style="padding: 4px 8px; font-size: 12px; border: 1px solid #ccc; border-radius: 4px; width: 130px;">
+                    <button type="button" style="padding: 4px 10px; background: #249cff; color: white; border: none; border-radius: 4px; font-size: 12px; cursor: pointer;">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>FA24-BSE-O68 <br>Hanzala Mushtaq</p>
+            <div class="footer-links">
+                <a href="https://portfolio-two-gules-23mkcgjxak.vercel.app/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+                <a href="https://github.com/hanzalamushtaq" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>GitHub Profile</span>
+                </a>
+                <a href="https://github.com/hanzalamushtaq/WebAssign1.git" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Project Repository</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

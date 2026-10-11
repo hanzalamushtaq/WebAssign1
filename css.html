@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS</title>
+</head>
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="main.html"><img src="image/logo.png" alt="Logo"></a>
+        </div>
+        <div class="title">CSS Coverage</div>
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="html.html">HTML</a>
+            <a href="css.html" id="active">CSS</a>
+        </div>
+        <div class="search">
+            <input list="dlist" placeholder="Search CSS lectures...">
+            <datalist id="dlist">
+                <option value="Lecture 4: Introduction to CSS"></option>
+                <option value="Lecture 5: CSS Selectors"></option>
+                <option value="Lecture 6: CSS Box Model & Layout"></option>
+                <option value="Lecture 7: Responsive Web Design"></option>
+            </datalist>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Lecture 4 -->
+        <div class="card" id="lecture4">
+            <div class="card-top">
+                <span class="badge">Lecture 4</span>
+            </div>
+            <h3>Lecture 4: Introduction to CSS</h3>
+            <p class="subtitle">Styling web pages, syntax, and stylesheet methods</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Covers the fundamentals of Cascading Style Sheets, separating content from presentation, stylesheet integration methods, and font/color properties.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>CSS Introduction & Rules</strong>
+                    <ul>
+                        <li>CSS Anatomy
+                            <ul>
+                                <li>Selectors, properties, values</li>
+                                <li>Rule sets & declarations</li>
+                            </ul>
+                        </li>
+                        <li>Methods of Application
+                            <ul>
+                                <li>Inline styles (style="")</li>
+                                <li>Internal style (&lt;style&gt;)</li>
+                                <li>External stylesheet (&lt;link&gt;)</li>
+                            </ul>
+                        </li>
+                        <li>Color & Fonts
+                            <ul>
+                                <li>Colors (HEX, RGB, Names)</li>
+                                <li>Font families & sizes</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;style&gt;
+  .styled-text {
+    color: #249cff;
+    font-weight: bold;
+  }
+&lt;/style&gt;
+&lt;p class="styled-text"&gt;Styled with CSS&lt;/p&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <p style="color: #249cff; font-weight: bold; margin: 0; font-size: 14px;">Styled with CSS</p>
+            </div>
+        </div>
+
+        <!-- Lecture 5 -->
+        <div class="card" id="lecture5">
+            <div class="card-top">
+                <span class="badge">Lecture 5</span>
+            </div>
+            <h3>Lecture 5: CSS Selectors</h3>
+            <p class="subtitle">Targeting DOM elements with precision and specificity</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Teaches how to accurately target elements with class, ID, element selectors, grouping, combinators, and interactive pseudo-classes.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>Selectors & Hierarchy</strong>
+                    <ul>
+                        <li>Basic Selectors
+                            <ul>
+                                <li>Element selector (p, h1)</li>
+                                <li>Class selector (.card)</li>
+                                <li>ID selector (#nav)</li>
+                            </ul>
+                        </li>
+                        <li>Combinators & Grouping
+                            <ul>
+                                <li>Descendant & Child (&gt;)</li>
+                                <li>Grouping selectors (,)</li>
+                            </ul>
+                        </li>
+                        <li>Pseudo-classes
+                            <ul>
+                                <li>:hover and :focus</li>
+                                <li>:first-child, :nth-child</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;style&gt;
+  .demo-btn:hover {
+    background: #1e3a8a;
+  }
+&lt;/style&gt;
+&lt;button class="demo-btn"&gt;Hover Me&lt;/button&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <button style="background: #249cff; color: white; border: none; padding: 5px 12px; border-radius: 6px; font-size: 12.5px; font-weight: bold; cursor: pointer; transition: background 0.2s ease;" onmouseover="this.style.background='#1e3a8a'" onmouseout="this.style.background='#249cff'">Hover Me</button>
+            </div>
+        </div>
+
+        <!-- Lecture 6 -->
+        <div class="card" id="lecture6">
+            <div class="card-top">
+                <span class="badge">Lecture 6</span>
+            </div>
+            <h3>Lecture 6: CSS Box Model & Layout</h3>
+            <p class="subtitle">Spacing, sizing, borders, and modern layout models</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Deep-dives into the CSS Box Model (margin, border, padding, content), box-sizing calculations, and fundamental page layout principles.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>Box Model Architecture</strong>
+                    <ul>
+                        <li>Layers of Box
+                            <ul>
+                                <li>Margin (outer space)</li>
+                                <li>Border (outline boundary)</li>
+                                <li>Padding (inner clearance)</li>
+                                <li>Content area</li>
+                            </ul>
+                        </li>
+                        <li>Box Sizing Control
+                            <ul>
+                                <li>content-box default</li>
+                                <li>box-sizing: border-box</li>
+                            </ul>
+                        </li>
+                        <li>Display Types
+                            <ul>
+                                <li>block, inline, inline-block</li>
+                                <li>flexbox introduction</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;div style="padding:10px; border:2px solid #249cff; background:#e0f2fe;"&gt;
+  &lt;strong&gt;Box Model Preview&lt;/strong&gt;
+&lt;/div&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <div style="padding: 8px 12px; border: 2px solid #249cff; background: #e0f2fe; border-radius: 6px; font-size: 13px; color: #0369a1;">
+                    <strong>Box Model Preview</strong>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lecture 7 -->
+        <div class="card" id="lecture7">
+            <div class="card-top">
+                <span class="badge">Lecture 7</span>
+            </div>
+            <h3>Lecture 7: Responsive Web Design</h3>
+            <p class="subtitle">Mobile-first design, fluid units, and media queries</p>
+
+            <div class="section-heading">Summary</div>
+            <p class="summary-text">Covers crafting responsive websites adaptable across smartphones, tablets, laptops, and desktops using Media Queries and fluid units.</p>
+
+            <div class="section-heading">Topics Covered:</div>
+            <ul class="topics-tree">
+                <li><strong>Responsive Development</strong>
+                    <ul>
+                        <li>Viewport Setup
+                            <ul>
+                                <li>&lt;meta name="viewport"&gt;</li>
+                                <li>Device-width & initial scale</li>
+                            </ul>
+                        </li>
+                        <li>CSS Media Queries
+                            <ul>
+                                <li>@media screen rules</li>
+                                <li>Breakpoints (mobile/desktop)</li>
+                            </ul>
+                        </li>
+                        <li>Fluid Units
+                            <ul>
+                                <li>Percentages (%)</li>
+                                <li>Viewport units (vw, vh)</li>
+                                <li>Flex layout wrapping</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="section-heading">Example Code:</div>
+            <div class="code-preview">&lt;style&gt;
+  @media (max-width: 600px) {
+    .resp-badge { color: red; }
+  }
+&lt;/style&gt;
+&lt;span class="resp-badge"&gt;Fluid Element&lt;/span&gt;</div>
+
+            <div class="section-heading">Output:</div>
+            <div class="output-preview">
+                <span style="background: #dbeafe; color: #1e40af; padding: 4px 10px; border-radius: 4px; font-size: 13px; font-weight: 600;">Fluid Element</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <p>FA24-BSE-O68 <br>Hanzala Mushtaq</p>
+            <div class="footer-links">
+                <a href="https://portfolio-two-gules-23mkcgjxak.vercel.app/" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span>Portfolio</span>
+                </a>
+                <a href="https://github.com/hanzalamushtaq" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                    </svg>
+                    <span>GitHub Profile</span>
+                </a>
+                <a href="https://github.com/hanzalamushtaq/WebAssign1.git" target="_blank" rel="noopener noreferrer" class="footer-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    <span>Project Repository</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
